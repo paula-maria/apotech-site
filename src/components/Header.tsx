@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
+import { contato } from '../data/content'
 
 const links = [
   ['/#quem-somos', 'Quem somos'],
+  ['/#areas', 'Áreas de atuação'],
   ['/#servicos', 'Serviços'],
   ['/cursos', 'Cursos'],
   ['/#diferenciais', 'Diferenciais'],
@@ -18,7 +20,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="logo">
-          Apotech <span>Jr.</span>
+          <img src="/APOTECH.png" alt="Apotech Jr." className="logo-image" />
         </Link>
         <button
           type="button"
@@ -35,9 +37,15 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <Link to="/#contato" className="btn btn-small" onClick={() => setAberto(false)}>
+          <a
+            href={`https://wa.me/${contato.telefones[0].numero}`}
+            className="btn btn-small"
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setAberto(false)}
+          >
             Fale conosco
-          </Link>
+          </a>
         </nav>
       </div>
     </header>
