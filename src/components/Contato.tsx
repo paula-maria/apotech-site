@@ -35,28 +35,6 @@ export default function Contato() {
             Enviar mensagem
           </button>
         </form>
-        <div className="card contact-list">
-          <h3>Fale com a gente</h3>
-          <ul>
-            {contato.telefones.map((t) => (
-              <li key={t.numero}>
-                <a href={`https://wa.me/${t.numero}`} target="_blank" rel="noreferrer">
-                  WhatsApp {t.exibicao}
-                </a>
-              </li>
-            ))}
-            {contato.emails.map((m) => (
-              <li key={m}>
-                <a href={`mailto:${m}`}>{m}</a>
-              </li>
-            ))}
-            <li>
-              <a href={contato.instagram.url} target="_blank" rel="noreferrer">
-                Instagram {contato.instagram.usuario}
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </Section>
   )

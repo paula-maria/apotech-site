@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import QuemSomos from './components/QuemSomos'
 import Servicos from './components/Servicos'
+import Cursos from './components/Cursos'
 import Diferenciais from './components/Diferenciais'
 import Cases from './components/Cases'
 import Equipe from './components/Equipe'
@@ -16,6 +17,7 @@ export default function App() {
         <Hero />
         <QuemSomos />
         <Servicos />
+        <Cursos />
         <Diferenciais />
         <Cases />
         <Equipe />

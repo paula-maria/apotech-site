@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react'
 const links = [
   ['#quem-somos', 'Quem somos'],
   ['#servicos', 'Serviços'],
+  ['#cursos', 'Cursos'],
   ['#diferenciais', 'Diferenciais'],
   ['#cases', 'Cases'],
   ['#equipe', 'Equipe'],

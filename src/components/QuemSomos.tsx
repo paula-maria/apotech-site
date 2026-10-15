@@ -1,5 +1,5 @@
 import Section from './Section'
-import { sobre } from '../data/content'
+import { metodologia, sobre } from '../data/content'
 
 export default function QuemSomos() {
   return (
@@ -12,25 +12,42 @@ export default function QuemSomos() {
           </span>
         ))}
       </p>
-      <div className="grid grid-2">
-        <div className="card">
+      <div className="grid grid-2 identity-grid">
+        <article className="card identity-card">
+          <span className="identity-kicker">Nosso propósito</span>
           <h3>Missão</h3>
           <p>{sobre.missao}</p>
-        </div>
-        <div className="card">
+        </article>
+        <article className="card identity-card">
+          <span className="identity-kicker">Onde queremos chegar</span>
           <h3>Visão</h3>
           <p>{sobre.visao}</p>
+        </article>
+      </div>
+      <div className="identity-values">
+        <div className="identity-heading">
+          <span className="identity-kicker">O que nos guia</span>
+          <h3 className="group-title">Valores</h3>
+        </div>
+        <div className="grid grid-2 values-grid">
+          {sobre.valores.map((v) => (
+            <article key={v.titulo} className="card value-card">
+              <h4>{v.titulo}</h4>
+              {v.texto && <p>{v.texto}</p>}
+            </article>
+          ))}
         </div>
       </div>
-      <h3 className="group-title">Valores</h3>
-      <div className="grid grid-4">
-        {sobre.valores.map((v) => (
-          <div key={v.titulo} className="card card-small">
-            <h4>{v.titulo}</h4>
-            {v.texto && <p>{v.texto}</p>}
-          </div>
+      <h3 className="group-title">Como trabalhamos</h3>
+      <ol className="steps">
+        {metodologia.map((m, i) => (
+          <li key={m.titulo}>
+            <span className="step-num">{i + 1}</span>
+            <h4>{m.titulo}</h4>
+            <p>{m.texto}</p>
+          </li>
         ))}
-      </div>
+      </ol>
     </Section>
   )
 }
