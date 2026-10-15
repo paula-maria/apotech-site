@@ -1,4 +1,4 @@
-import { ClipboardCheck, FlaskConical, Microscope, GraduationCap, Sparkles, Pill } from 'lucide-react'
+import { ClipboardCheck, FlaskConical, Microscope, GraduationCap } from 'lucide-react'
 
 export const contato = {
   emails: ['Apotech.junior@gmail.com', 'fabio@unifap.br', 'sailelcrd@gmail.com'],
@@ -88,17 +88,4 @@ export const equipe = [
   { nome: 'Euriany Araújo', cargo: 'Projetos e Consultoria' },
   { nome: 'Marjorie Soares', cargo: 'Marketing e Relacionamento' },
   { nome: 'Luís Gustavo', cargo: 'Financeiro' },
-]
-
-export const cursos = [
-  {
-    icone: Sparkles,
-    titulo: 'Formulação de Cosméticos',
-    texto: 'Capacitação voltada à formulação de produtos cosméticos.',
-  },
-  {
-    icone: Pill,
-    titulo: 'Produção de Medicamentos',
-    texto: 'Capacitação voltada à produção de medicamentos.',
-  },
 ]

@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  ['#quem-somos', 'Quem somos'],
-  ['#servicos', 'Serviços'],
-  ['#cursos', 'Cursos'],
-  ['#diferenciais', 'Diferenciais'],
-  ['#cases', 'Cases'],
-  ['#equipe', 'Equipe'],
+  ['/#quem-somos', 'Quem somos'],
+  ['/#servicos', 'Serviços'],
+  ['/cursos', 'Cursos'],
+  ['/#diferenciais', 'Diferenciais'],
+  ['/#cases', 'Cases'],
+  ['/#equipe', 'Equipe'],
 ]
 
 export default function Header() {
@@ -16,9 +17,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="#inicio" className="logo">
+        <Link to="/" className="logo">
           Apotech <span>Jr.</span>
-        </a>
+        </Link>
         <button
           type="button"
           className="menu-toggle"
@@ -30,13 +31,13 @@ export default function Header() {
         </button>
         <nav className={aberto ? 'nav open' : 'nav'}>
           {links.map(([href, label]) => (
-            <a key={href} href={href} onClick={() => setAberto(false)}>
+            <Link key={href} to={href} onClick={() => setAberto(false)}>
               {label}
-            </a>
+            </Link>
           ))}
-          <a href="#contato" className="btn btn-small" onClick={() => setAberto(false)}>
+          <Link to="/#contato" className="btn btn-small" onClick={() => setAberto(false)}>
             Fale conosco
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

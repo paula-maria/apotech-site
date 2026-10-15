@@ -1,24 +1,22 @@
+import { Link } from 'react-router-dom'
 import Section from './Section'
-import { cursos } from '../data/content'
+import { INSCRICAO_URL, cursinho, resumo, secoes } from '../data/cursinho'
 
 export default function Cursos() {
   return (
-    <Section id="cursos" titulo="Cursos e Treinamentos" subtitulo="Capacitações para quem quer formular e produzir com qualidade." alt>
-      <div className="grid grid-2">
-        {cursos.map((c) => (
-          <article key={c.titulo} className="card">
-            <span className="icon" aria-hidden="true">
-              <c.icone size={32} />
-            </span>
-            <h3>{c.titulo}</h3>
-            <p>{c.texto}</p>
-          </article>
-        ))}
-      </div>
+    <Section id="cursos" titulo="Cursos e Treinamentos" subtitulo="Capacitações para quem quer se preparar e se qualificar na área farmacêutica." alt>
+      <article className="card card-highlight featured">
+        <span className="chip">{INSCRICAO_URL ? secoes.inscricao.acao : secoes.inscricao.emBreve}</span>
+        <h3 className="card-title">{cursinho.titulo}</h3>
+        <p>{resumo}</p>
+        <Link to="/cursos" className="btn">
+          Ver detalhes do curso
+        </Link>
+      </article>
       <p className="cta">
-        <a href="#contato" className="btn">
+        <Link to="/#contato" className="btn btn-outline-dark">
           Quero saber mais
-        </a>
+        </Link>
       </p>
     </Section>
   )
