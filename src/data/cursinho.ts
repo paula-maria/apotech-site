@@ -13,7 +13,11 @@ export const cursinho = {
   ],
 }
 
-export const resumo = '7 encontros, 35 horas por turma, de 31 de outubro a 19 de dezembro.'
+export const informacoes = [
+  { rotulo: 'Turmas', texto: 'manhã (08h–13h) ou tarde (14h–19h) — 5h de atividades por encontro, com intervalo de 30 minutos.' },
+  { rotulo: 'Investimento', texto: 'R$ 150 para estudantes · R$ 200 para profissionais, por inscrição.' },
+  { rotulo: 'Vagas', texto: '70 por turma, 140 no total. Não há encontro em 14/11.' },
+]
 
 export const secoes = {
   conteudo: {
@@ -36,6 +40,11 @@ export const secoes = {
     titulo: 'Valor da inscrição',
     descricao: 'Por inscrição, para as 35 horas do curso.',
     aviso: 'São 70 vagas por turma, 140 no total.',
+    diaAvulso: {
+      pergunta: 'Quer pagar para participar apenas 1 dia?',
+      valor: 'R$ 50,00',
+      texto: 'por dia de participação.',
+    },
   },
   inscricao: {
     titulo: 'Garanta sua vaga na turma da manhã ou da tarde',

@@ -1,4 +1,4 @@
-import { contato, sobre } from '../data/content'
+import { contato } from '../data/content'
 import { Camera, Mail, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <p>
-            © {new Date().getFullYear()} Apotech Jr. · Empresa Júnior de Farmácia · {sobre.apoio.join(' · ')}
+            © {new Date().getFullYear()} Apotech Jr. · Empresa Júnior de Farmácia
           </p>
         </div>
       </footer>

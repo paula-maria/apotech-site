@@ -1,7 +1,7 @@
-import { ClipboardCheck, FlaskConical, Microscope, GraduationCap } from 'lucide-react'
+import { ClipboardCheck, FlaskConical, GraduationCap } from 'lucide-react'
 
 export const contato = {
-  emails: ['Apotech.junior@gmail.com', 'fabio@unifap.br', 'sailelcrd@gmail.com'],
+  emails: ['Apotech.junior@gmail.com'],
   telefones: [
     { exibicao: '(96) 99913-3132', numero: '5596999133132' },
     { exibicao: '(96) 98103-6199', numero: '5596981036199' },
@@ -11,49 +11,49 @@ export const contato = {
 
 export const sobre = {
   descricao:
-    'Empresa Júnior do Curso de Farmácia da Universidade Federal do Amapá (UNIFAP), dedicada à consultoria técnica e ao desenvolvimento de produtos químicos, farmacêuticos, cosméticos e dietéticos.',
+    'Empresa Júnior vinculada ao curso de Farmácia da Universidade Federal do Amapá (UNIFAP), gerida por estudantes que aplicam seus conhecimentos na prática por meio de serviços para a sociedade.',
   proposito:
-    'Suprir a escassez de serviços técnicos especializados e consultorias farmacêuticas no Amapá, apoiando micro e pequenos empreendedores, promovendo inovação e inserindo estudantes na prática profissional.',
-  apoio: ['UNIFAP', 'PROEAC', 'FOGAP'],
+    'Aproximar a formação acadêmica das necessidades reais da sociedade com consultoria farmacêutica, desenvolvimento de produtos e soluções de qualidade.',
+  conquista:
+    'A primeira Empresa Júnior do Departamento de Ciências Biológicas e da Saúde (DCBS) com uma proposta inovadora de consultoria farmacêutica.',
   missao: 'Desenvolver produtos farmacêuticos inovadores e prestar consultoria com excelência e qualidade.',
   visao: 'Ser referência na inserção de acadêmicos de Farmácia na prática profissional.',
-  valores: [
-    { titulo: 'Ética', texto: 'Transparência e proteção rigorosa de processos e dados.' },
-    { titulo: 'Impacto', texto: 'Foco nas necessidades dos parceiros e da sociedade.' },
-  ],
+  valores: ['Confiança', 'Inovação', 'Criatividade', 'Personalização', 'Qualidade'],
 }
 
 export const servicos = [
   {
     icone: ClipboardCheck,
-    titulo: 'Consultoria Regulatória',
-    texto:
-      'Adequação às normas da ANVISA e órgãos reguladores, registro de produtos, implementação de Boas Práticas de Fabricação (BPF) e proteção intelectual.',
+    titulo: 'Consultoria para produtos cosméticos',
+    texto: 'Apoio técnico da concepção à adequação do produto, com atenção às normas vigentes da ANVISA.',
+    itens: [
+      'Formulação teórica',
+      'Prototipagem de produto',
+      'Melhoramento de formulação',
+      'Proteção intelectual',
+    ],
   },
   {
     icone: FlaskConical,
-    titulo: 'Desenvolvimento Técnico e Inovação em Fórmulas',
-    texto:
-      'Desenvolvimento e otimização de formulações para medicamentos, cosméticos, suplementos/dietéticos e saneantes.',
-  },
-  {
-    icone: Microscope,
-    titulo: 'Análises Laboratoriais',
-    texto: 'Ensaios químicos, físico-químicos e biológicos com equipamentos de alta performance.',
+    titulo: 'Análises e soluções laboratoriais',
+    texto: 'Ensaios e soluções para laboratórios e empresas, com foco na qualidade e confiabilidade dos resultados.',
+    itens: ['Ensaios químicos', 'Ensaios físico-químicos', 'Ensaios biológicos'],
   },
   {
     icone: GraduationCap,
-    titulo: 'Cursos e Treinamentos',
-    texto: 'Capacitações em formulação de cosméticos e produção de medicamentos.',
+    titulo: 'Cursos e palestras',
+    texto:
+      'Capacitação técnica prática, com conteúdos dinâmicos e atualizados para as demandas do mercado e a formação de profissionais preparados.',
   },
 ]
 
 export const areas = [
-  'Setor Farmacêutico',
-  'Setor Cosmético',
-  'Alimentício e Suplementos/Dietéticos',
-  'Pesquisa, Universidades e Instituições Públicas',
-  'Drogarias, Farmácias de Manipulação e Micro/Pequenas Empresas',
+  'Setor farmacêutico',
+  'Setor cosmético',
+  'Setor alimentício e suplementos/dietéticos',
+  'Pesquisa, universidades e instituições públicas',
+  'Drogarias e farmácias de manipulação',
+  'Micro e pequenas empresas',
 ]
 
 export const diferenciais = [
@@ -80,12 +80,16 @@ export const cases = [
 ]
 
 export const equipe = [
-  {
-    nome: 'Prof. Dr. Francisco Fábio',
-    cargo: 'Professor Associado do Curso de Farmácia · Bolsista DT nível 2 - CNPq',
-  },
-  { nome: 'Saile Lacerda', cargo: 'CEO / Representante Oficial' },
-  { nome: 'Euriany Araújo', cargo: 'Projetos e Consultoria' },
-  { nome: 'Marjorie Soares', cargo: 'Marketing e Relacionamento' },
-  { nome: 'Luís Gustavo', cargo: 'Financeiro' },
+  { nome: 'Nicolas Andrade', cargo: 'Presidente' },
+  { nome: 'Diraeli Freitas', cargo: 'Vice-presidente' },
+  { nome: 'Saile Lacerda', cargo: 'Conselheira estratégica' },
+  { nome: 'Lucas Oliveira', cargo: 'Diretor comercial' },
+  { nome: 'Tayan Paes', cargo: 'Assessor comercial' },
+  { nome: 'Iago Canto', cargo: 'Diretor de marketing' },
+  { nome: 'Caike Martins', cargo: 'Assessor de marketing' },
+  { nome: 'Davi Almeida', cargo: 'Diretor financeiro / RH' },
+  { nome: 'Aimê Mareco', cargo: 'Assessora financeira / RH' },
+  { nome: 'Yasmin Santos', cargo: 'Diretora de projetos' },
+  { nome: 'Tiago Souto', cargo: 'Assessor de projetos' },
+  { nome: 'Julius Maximus', cargo: 'Assessor de projetos' },
 ]

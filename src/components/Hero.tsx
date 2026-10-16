@@ -1,3 +1,5 @@
+import { contato } from '../data/content'
+
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
@@ -5,11 +7,16 @@ export default function Hero() {
         <p className="eyebrow">Soluções Inovadoras em Tecnologia e Saúde</p>
         <h1>Soluções Criativas, Resultados Reais</h1>
         <p className="hero-text">
-          Empresa Júnior do Curso de Farmácia da UNIFAP: consultoria técnica e desenvolvimento de
-          produtos farmacêuticos, cosméticos e dietéticos.
+          Empresa Júnior do curso de Farmácia da UNIFAP, gerida por estudantes e dedicada a soluções
+          farmacêuticas para a sociedade.
         </p>
         <div className="hero-actions">
-          <a href="#contato" className="btn">
+          <a
+            href={`https://wa.me/${contato.telefones[0].numero}`}
+            className="btn"
+            target="_blank"
+            rel="noreferrer"
+          >
             Solicitar proposta
           </a>
           <a href="#servicos" className="btn btn-outline">
