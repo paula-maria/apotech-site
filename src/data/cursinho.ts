@@ -7,16 +7,16 @@ export const cursinho = {
   lead: 'Revisão e aprofundamento dos principais conteúdos da área farmacêutica, com foco em concursos públicos. Sete encontros, 35 horas por turma, de 31 de outubro a 19 de dezembro.',
   fatos: [
     { valor: '35 h', texto: 'de carga horária por turma' },
-    { valor: '7', texto: 'encontros, aulão final incluso' },
-    { valor: '2', texto: 'turmas: manhã e tarde' },
-    { valor: '140', texto: 'vagas, 70 por turma' },
+    { valor: '7 encontros', texto: 'aulão final  de revisão incluso' },
+    { valor: '2 turmas', texto: 'turnos de manhã e tarde' },
+    { valor: '140 vagas', texto: '70  por turma' },
   ],
 }
 
 export const informacoes = [
   { rotulo: 'Turmas', texto: 'manhã (08h–13h) ou tarde (14h–19h) — 5h de atividades por encontro, com intervalo de 30 minutos.' },
   { rotulo: 'Investimento', texto: 'R$ 150 para estudantes · R$ 200 para profissionais, por inscrição.' },
-  { rotulo: 'Vagas', texto: '70 por turma, 140 no total. Não há encontro em 14/11.' },
+  { rotulo: 'Vagas', texto: '70 por turma, 140 no total.' },
 ]
 
 export const secoes = {
@@ -25,7 +25,7 @@ export const secoes = {
     subtitulo: 'Cada sábado reúne três disciplinas. As duas turmas seguem o mesmo conteúdo e a mesma ordem.',
   },
   cronograma: {
-    titulo: 'Sete sábados, de outubro a dezembro',
+    titulo: 'Sete sábados de outubro a dezembro',
     aviso: 'Não há encontro em 14/11.',
     inaugural: 'Aula inaugural',
     revisao: 'Revisão geral',

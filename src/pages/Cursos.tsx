@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { CalendarDays, Clock, GraduationCap, Users } from 'lucide-react'
+import { ArrowRight, CalendarDays, Clock, GraduationCap, MessageCircle, Users } from 'lucide-react'
 import Section from '../components/Section'
+import { contato } from '../data/content'
 import {
   INSCRICAO_URL,
   aulaoFinal,
@@ -45,6 +46,11 @@ export default function Cursos() {
               Ver conteúdo
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="course-facts-strip" aria-label="Informações do curso">
+        <div className="container">
           <ul className="facts">
             {cursinho.fatos.map((f, i) => {
               const Icone = icones[i]
@@ -67,7 +73,7 @@ export default function Cursos() {
       >
         <div className="grid grid-3">
           {encontros.map((e) => (
-            <article key={e.data} className="card">
+            <article key={e.data} className="card course-card-item">
               <span className="chip">
                 {e.data} · {e.ordem}
               </span>
@@ -79,7 +85,7 @@ export default function Cursos() {
               </ul>
             </article>
           ))}
-          <article className="card card-highlight card-wide">
+          <article className="card card-highlight card-wide course-card-item">
             <span className="chip">
               {aulaoFinal.data} · {aulaoFinal.titulo}
             </span>
@@ -116,7 +122,7 @@ export default function Cursos() {
       >
         <div className="grid grid-2">
           {turnos.map((t) => (
-            <article key={t.nome} className="card">
+            <article key={t.nome} className="card course-card-item">
               <h3 className="turn-title">
                 {t.nome} <span>{t.horario}</span>
               </h3>
@@ -136,7 +142,7 @@ export default function Cursos() {
       <Section id="valores" titulo={secoes.valores.titulo} alt>
         <div className="grid grid-2">
           {precos.map((p) => (
-            <article key={p.publico} className="card price">
+            <article key={p.publico} className="card price course-card-item">
               <span className="chip">{p.publico}</span>
               <p className="price-amount">{p.valor}</p>
               <p>{secoes.valores.descricao}</p>
@@ -144,7 +150,7 @@ export default function Cursos() {
           ))}
         </div>
         <details className="day-price">
-          <summary>{secoes.valores.diaAvulso.pergunta}</summary>
+          <summary className="day-pass-question">{secoes.valores.diaAvulso.pergunta}</summary>
           <p>
             <b>{secoes.valores.diaAvulso.valor}</b> {secoes.valores.diaAvulso.texto}
           </p>
@@ -152,14 +158,22 @@ export default function Cursos() {
         <p className="note">{secoes.valores.aviso}</p>
       </Section>
 
-      <section id="inscricao" className="hero signup">
-        <div className="container">
-          <p className="eyebrow">Inscrição</p>
-          <h2>{secoes.inscricao.titulo}</h2>
-          <p className="hero-text">{secoes.inscricao.texto}</p>
-          <div className="hero-actions">
-            <BotaoInscricao />
+      <section id="inscricao" className="course-contact-strip">
+        <div className="container course-contact-inner">
+          <div className="course-contact-copy">
+            <h2>Seu próximo passo começa com uma conversa.</h2>
+            <p>Tem dúvidas sobre o curso? A equipe Apotech Jr. está aqui para ajudar.</p>
           </div>
+          <a
+            className="course-contact-button"
+            href={`https://wa.me/${contato.telefones[0].numero}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MessageCircle aria-hidden="true" size={17} />
+            <span>Fale com a nossa equipe</span>
+            <ArrowRight aria-hidden="true" size={17} />
+          </a>
         </div>
       </section>
     </>

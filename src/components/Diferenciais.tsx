@@ -6,7 +6,7 @@ export default function Diferenciais() {
     <Section id="diferenciais" titulo="Diferenciais">
       <div className="grid grid-3">
         {diferenciais.map((d) => (
-          <div key={d.titulo} className="card">
+          <div key={d.titulo} className="card differentiator-card">
             <h3>{d.titulo}</h3>
             <p>{d.texto}</p>
           </div>

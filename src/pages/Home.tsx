@@ -5,7 +5,6 @@ import Areas from '../components/Areas'
 import Servicos from '../components/Servicos'
 import Cursos from '../components/Cursos'
 import Diferenciais from '../components/Diferenciais'
-import Cases from '../components/Cases'
 import Equipe from '../components/Equipe'
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Servicos />
       <Cursos />
       <Diferenciais />
-      <Cases />
       <Equipe />
     </>
   )

@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <p>
-            © {new Date().getFullYear()} Apotech Jr. · Empresa Júnior de Farmácia
+            © {new Date().getFullYear()} · Apotech Jr 
           </p>
         </div>
       </footer>
