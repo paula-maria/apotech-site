@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import { contato } from '../data/content'
 
 const links = [
   ['/#quem-somos', 'Quem somos'],
@@ -35,15 +34,6 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <a
-            href={`https://wa.me/${contato.telefones[0].numero}`}
-            className="btn btn-small"
-            target="_blank"
-            rel="noreferrer"
-            onClick={() => setAberto(false)}
-          >
-            Fale conosco
-          </a>
         </nav>
       </div>
     </header>
