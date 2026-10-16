@@ -38,15 +38,6 @@ export default function Footer() {
           </p>
         </div>
       </footer>
-      <a
-        className="whatsapp"
-        href={`https://wa.me/${contato.telefones[0].numero}`}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Conversar no WhatsApp"
-      >
-        WhatsApp
-      </a>
     </>
   )
 }
