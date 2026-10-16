@@ -113,15 +113,15 @@ section[id] { scroll-margin-top: 70px; }
 }
 .identity-card h3 { margin-bottom: .65rem; font-size: 1.35rem; }
 .identity-card p { color: var(--muted); }
-.identity-values { display: flex; flex-wrap: wrap; gap: .5rem; }
+.identity-values { display: grid; gap: .35rem; }
 .identity-values li {
-  padding: .3rem .75rem;
-  border-radius: 999px;
-  background: #dff1f2;
-  color: var(--primary-dark);
+  position: relative;
+  padding-left: 1rem;
+  color: var(--text);
   font-size: .9rem;
   font-weight: 600;
 }
+.identity-values li::before { position: absolute; top: .65em; left: .1rem; width: 6px; height: 6px; border-radius: 50%; background: var(--primary); content: ''; }
 @media (hover: hover) {
   .identity-card:hover {
     transform: translateY(-6px);
@@ -154,7 +154,7 @@ section[id] { scroll-margin-top: 70px; }
 .chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1rem; }
 .chip { background: #dff1f2; color: var(--primary-dark); padding: .3rem .9rem; border-radius: 999px; font-size: .9rem; font-weight: 600; }
 .areas-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-.area-item { min-height: 82px; display: flex; align-items: center; gap: .9rem; padding: 1rem 1.25rem; border: 1px solid #cfe4e5; border-radius: 15px; background: #fff; color: var(--primary-dark); font-size: .9rem; font-weight: 600; line-height: 1.45; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
+.area-item { min-height: 82px; display: flex; align-items: center; gap: .9rem; padding: 1rem 1.25rem; border: 1px solid #cfe4e5; border-radius: 15px; background: #fff; color: var(--text); font-size: .9rem; font-weight: 600; line-height: 1.45; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; }
 .area-icon { width: 44px; height: 44px; flex: 0 0 44px; display: grid; place-items: center; border: 1px solid #cfe4e5; border-radius: 12px; background: #fff; color: var(--primary); }
 @media (hover: hover) and (pointer: fine) {
   .area-item:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 12px 24px rgb(9 90 98 / 12%); }
@@ -181,7 +181,7 @@ section[id] { scroll-margin-top: 70px; }
 .about-award { min-height: 280px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 1.75rem; border-radius: 16px; background: var(--primary-dark); color: #fff; }
 .about-award-heading { display: flex; align-items: center; gap: .75rem; margin-bottom: .15rem; }
 .about-award-icon { flex: 0 0 auto; color: #fff; }
-.about-award h3 { margin: 0; color: #fff; font-size: 2.2rem; }
+.about-award h3 { margin: 0; color: var(--accent); font-size: 2.2rem; }
 .about-award > strong { color: #fff; }
 .about-award p { margin: .75rem 0 0; color: rgb(255 255 255 / 85%); font-size: .9rem; }
 .about-method-title { margin-top: 3rem; font-size: .85rem; letter-spacing: .07em; text-transform: uppercase; }
@@ -327,7 +327,7 @@ section[id] { scroll-margin-top: 70px; }
 .card-wide { grid-column: 1 / -1; }
 .card-highlight { background: var(--primary-dark); color: #fff; }
 .card-highlight .card-title { color: #fff; }
-.card-highlight .chip { background: var(--accent); color: var(--primary-dark); }
+.card-highlight .chip { border: 1px solid rgb(255 255 255 / 45%); background: transparent; color: #fff; }
 .check-list { display: grid; gap: .4rem; color: var(--muted); font-size: .95rem; }
 .check-list li { position: relative; padding-left: 1.1rem; }
 .check-list li::before { content: ''; position: absolute; left: 0; top: .65em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
@@ -354,13 +354,12 @@ section[id] { scroll-margin-top: 70px; }
 .course-info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
 .course-info-item { min-width: 0; padding: 0 1rem; border-left: 1px solid #dcebec; }
 .course-info-item:first-child { padding-left: 0; border-left: 0; }
-.course-info-item h5 { margin: 0 0 .65rem; color: var(--primary-dark); font-size: .95rem; }
+.course-info-item h5 { margin: 0 0 .65rem; color: var(--text); font-size: .95rem; }
 .course-info-item p { margin: 0; color: var(--muted); font-size: .9rem; }
 .course-prices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
 .course-price { display: grid; gap: .2rem; }
 .course-price span { color: var(--muted); font-size: .8rem; }
 .course-price strong { color: var(--primary-dark); font-size: 1.1rem; }
-.course-info-note { margin: 1rem 0 0; color: var(--muted); font-size: .88rem; }
 @media (max-width: 800px) { .course-info-grid { grid-template-columns: 1fr 1fr; } .course-info-item:last-child { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .course-info-grid { grid-template-columns: 1fr; } .course-info-item, .course-info-item:first-child { padding: .85rem 0 0; border: 0; border-top: 1px solid #dcebec; } .course-info-item:first-child { padding-top: 0; border-top: 0; } .course-info-item:last-child { grid-column: auto; } .course-prices { grid-template-columns: 1fr 1fr; } }
 .schedule { margin-top: 1.5rem; border-top: 2px solid var(--primary-dark); }

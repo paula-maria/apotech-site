@@ -53,7 +53,6 @@ export default function Cursos() {
               </div>
             ))}
           </div>
-          {!INSCRICAO_URL && <p className="course-info-note">Assim que o link de inscrição estiver disponível, ele aparece nesta página.</p>}
         </div>
       </article>
     </Section>
