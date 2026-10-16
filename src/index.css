@@ -385,7 +385,7 @@ section[id] { scroll-margin-top: 70px; }
 .day-price summary:hover { color: var(--primary); }
 .day-price p { display: inline-flex; align-items: baseline; gap: .4rem; margin: .75rem 0 0; padding: .65rem 1rem; border: 1px solid var(--border); border-radius: 12px; background: #fff; color: var(--muted); }
 .day-price b { color: var(--primary-dark); font-size: 1.5rem; }
-.course-contact-strip { padding: 2rem 0; background: var(--bg-alt); }
+.course-contact-strip { padding: 2rem 0; background: #fff; }
 .course-contact-inner {
   display: flex;
   align-items: center;
@@ -394,27 +394,9 @@ section[id] { scroll-margin-top: 70px; }
 }
 .course-contact-copy h2 { margin-bottom: .5rem; color: var(--primary-dark); font-size: 1.35rem; font-weight: 500; }
 .course-contact-copy p { margin: 0; color: var(--muted); font-size: .9rem; }
-.course-contact-button {
-  display: inline-flex;
-  flex: 0 0 auto;
-  align-items: center;
-  gap: .6rem;
-  padding: .55rem 1rem;
-  border: 1px solid var(--primary);
-  border-radius: 999px;
-  background: #fff;
-  color: var(--primary-dark);
-  font-size: .9rem;
-  transition: background-color .2s ease, color .2s ease;
-}
-.course-contact-button:hover { background: var(--primary); color: #fff; }
 @media (max-width: 650px) {
   .course-contact-inner { align-items: flex-start; flex-direction: column; gap: 1.25rem; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .course-contact-button { transition: none; }
-}
-
 @media (max-width: 560px) {
   .schedule-row { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
   .schedule-order { order: -1; }

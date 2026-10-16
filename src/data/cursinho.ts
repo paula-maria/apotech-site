@@ -2,9 +2,9 @@
 export const INSCRICAO_URL = ''
 
 export const cursinho = {
-  titulo: 'Cursinho preparatório SESA/AP Farmacêutico',
-  etiqueta: 'APOTECH Jr · UNIFAP · Macapá',
-  lead: 'Revisão e aprofundamento dos principais conteúdos da área farmacêutica, com foco em concursos públicos.',
+  titulo: 'Cursinho preparatório SESA/AP',
+  lead: 'Revisão e aprofundamento dos principais conteúdos da área farmacêutica para concursos públicos.',
+  etiqueta: ' CARGO: FARMACÊUTICO',
   fatos: [
     { valor: '35 h', texto: 'de carga horária por turma' },
     { valor: '7 encontros', texto: 'aulão final  de revisão incluso' },

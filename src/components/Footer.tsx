@@ -7,7 +7,6 @@ export default function Footer() {
       <footer className="footer">
         <div className="container footer-inner">
           <div className="footer-contact">
-            <h2>Fale com a gente</h2>
             <ul className="footer-links">
               {contato.telefones.map((telefone) => (
                 <li key={telefone.numero}>

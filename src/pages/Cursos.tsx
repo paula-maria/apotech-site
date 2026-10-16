@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CalendarDays, Clock, GraduationCap, MessageCircle, Users } from 'lucide-react'
+import { CalendarDays, Clock, GraduationCap, Users } from 'lucide-react'
 import Section from '../components/Section'
-import { contato } from '../data/content'
 import {
   INSCRICAO_URL,
   aulaoFinal,
@@ -37,8 +36,8 @@ export default function Cursos() {
           <nav className="breadcrumb" aria-label="Você está em">
             <Link to="/">Início</Link> <span>/</span> <span>Cursos</span>
           </nav>
-          <p className="eyebrow">{cursinho.etiqueta}</p>
           <h1>{cursinho.titulo}</h1>
+          <p className="eyebrow">{cursinho.etiqueta}</p>
           <p className="hero-text">{cursinho.lead}</p>
           <div className="hero-actions">
             <BotaoInscricao />
@@ -163,16 +162,6 @@ export default function Cursos() {
             <h2>Seu próximo passo começa com uma conversa.</h2>
             <p>Tem dúvidas sobre o curso? A equipe Apotech Jr. está aqui para ajudar.</p>
           </div>
-          <a
-            className="course-contact-button"
-            href={`https://wa.me/${contato.telefones[0].numero}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <MessageCircle aria-hidden="true" size={17} />
-            <span>Fale com a nossa equipe</span>
-            <ArrowRight aria-hidden="true" size={17} />
-          </a>
         </div>
       </section>
     </>
