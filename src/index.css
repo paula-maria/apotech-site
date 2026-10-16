@@ -325,9 +325,9 @@ section[id] { scroll-margin-top: 70px; }
   .course-card-item { transition: none; }
 }
 .card-wide { grid-column: 1 / -1; }
-.card-highlight { background: var(--primary-dark); color: #fff; }
-.card-highlight .card-title { color: #fff; }
-.card-highlight .chip { border: 1px solid rgb(255 255 255 / 45%); background: transparent; color: #fff; }
+.card-highlight { background: var(--bg-alt); color: var(--text); border: 1px solid #dcebec; }
+.card-highlight .card-title { color: var(--primary-dark); }
+.card-highlight .chip { background: var(--bg-alt); color: var(--primary-dark); }
 .check-list { display: grid; gap: .4rem; color: var(--muted); font-size: .95rem; }
 .check-list li { position: relative; padding-left: 1.1rem; }
 .check-list li::before { content: ''; position: absolute; left: 0; top: .65em; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
