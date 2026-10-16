@@ -56,27 +56,11 @@ export const areas = [
   'Micro e pequenas empresas',
 ]
 
-export const diferenciais = [
-  { titulo: 'Custo-benefício', texto: 'Investimento acessível sem perder alta qualidade.' },
-  {
-    titulo: 'Inovação acadêmica',
-    texto: 'Acesso direto a laboratórios e professores especializados da UNIFAP.',
-  },
-  { titulo: 'Foco no cliente', texto: 'Atendimento dedicado, exclusivo e personalizado.' },
-]
-
 export const metodologia = [
   { titulo: 'Diagnóstico', texto: 'Entendimento e captação do problema.' },
   { titulo: 'Proposta', texto: 'Solução personalizada e viável.' },
   { titulo: 'Execução', texto: 'Acompanhamento técnico e rigoroso.' },
   { titulo: 'Entrega', texto: 'Resultado e suporte contínuo.' },
-]
-
-export const cases = [
-  { titulo: 'Sérum Facial de Pracaxi', categoria: 'Cosmético' },
-  { titulo: 'Sabonete Facial de Espirulina', categoria: 'Cosmético' },
-  { titulo: 'Espuma de Limpeza Facial de Breu Branco', categoria: 'Cosmético' },
-  { titulo: 'Protetor Solar de Castanha do Brasil (FPS 60)', categoria: 'Cosmético' },
 ]
 
 export const equipe = [

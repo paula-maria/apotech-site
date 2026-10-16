@@ -155,7 +155,6 @@ export default function Cursos() {
             <b>{secoes.valores.diaAvulso.valor}</b> {secoes.valores.diaAvulso.texto}
           </p>
         </details>
-        <p className="note">{secoes.valores.aviso}</p>
       </Section>
 
       <section id="inscricao" className="course-contact-strip">

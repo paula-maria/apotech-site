@@ -21,8 +21,10 @@ export default function QuemSomos() {
             <p className="about-purpose">{sobre.proposito}</p>
           </div>
           <aside className="about-award">
-            <Trophy className="about-award-icon" aria-hidden="true" size={28} />
-            <h3>1º lugar</h3>
+            <div className="about-award-heading">
+              <Trophy className="about-award-icon" aria-hidden="true" size={28} />
+              <h3>1º lugar</h3>
+            </div>
             <strong>Demoday UNIFAP 2025</strong>
             <p>{sobre.conquista}</p>
           </aside>

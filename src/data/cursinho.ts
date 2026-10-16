@@ -39,7 +39,6 @@ export const secoes = {
   valores: {
     titulo: 'Valor da inscrição',
     descricao: 'Por inscrição, para as 35 horas do curso.',
-    aviso: 'São 70 vagas por turma, 140 no total.',
     diaAvulso: {
       pergunta: 'Quer pagar para participar apenas 1 dia?',
       valor: 'R$ 50,00',
