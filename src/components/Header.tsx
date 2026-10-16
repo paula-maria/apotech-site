@@ -8,7 +8,6 @@ const links = [
   ['/#areas', 'Áreas de atuação'],
   ['/#servicos', 'Serviços'],
   ['/cursos', 'Cursos'],
-  ['/#diferenciais', 'Diferenciais'],
   ['/#equipe', 'Equipe'],
 ]
 

@@ -4,7 +4,6 @@ import Identidade from '../components/Identidade'
 import Areas from '../components/Areas'
 import Servicos from '../components/Servicos'
 import Cursos from '../components/Cursos'
-import Diferenciais from '../components/Diferenciais'
 import Equipe from '../components/Equipe'
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <Areas />
       <Servicos />
       <Cursos />
-      <Diferenciais />
       <Equipe />
     </>
   )

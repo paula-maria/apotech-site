@@ -71,7 +71,7 @@ export default function Cursos() {
         titulo={secoes.conteudo.titulo}
         subtitulo={secoes.conteudo.subtitulo}
       >
-        <div className="grid grid-3">
+        <div className="grid grid-3 course-content-grid">
           {encontros.map((e) => (
             <article key={e.data} className="card course-card-item">
               <span className="chip">

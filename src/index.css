@@ -300,6 +300,9 @@ section[id] { scroll-margin-top: 70px; }
 }
 .course-hero h1 { max-width: 20ch; }
 #turmas .subtitle { max-width: none; }
+.course-content-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 800px) { .course-content-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .course-content-grid { grid-template-columns: 1fr; } }
 .facts {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;
   margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgb(255 255 255 / 30%);

@@ -7,8 +7,8 @@ export default function QuemSomos() {
       <div className="container">
         <div className="about-intro">
           <div className="about-copy">
-            <p className="about-eyebrow">Quem somos</p>
-            <h2>Ciência farmacêutica a serviço da sociedade.</h2>
+            <h2 className="about-eyebrow">Quem somos</h2>
+            <h3>Ciência farmacêutica a serviço da sociedade.</h3>
             <p className="subtitle">{sobre.descricao}</p>
             <p className="about-purpose">{sobre.proposito}</p>
           </div>
