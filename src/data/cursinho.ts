@@ -4,7 +4,7 @@ export const INSCRICAO_URL = ''
 export const cursinho = {
   titulo: 'Cursinho preparatório SESA/AP Farmacêutico',
   etiqueta: 'APOTECH Jr · UNIFAP · Macapá',
-  lead: 'Revisão e aprofundamento dos principais conteúdos da área farmacêutica, com foco em concursos públicos. Sete encontros, 35 horas por turma, de 31 de outubro a 19 de dezembro.',
+  lead: 'Revisão e aprofundamento dos principais conteúdos da área farmacêutica, com foco em concursos públicos.',
   fatos: [
     { valor: '35 h', texto: 'de carga horária por turma' },
     { valor: '7 encontros', texto: 'aulão final  de revisão incluso' },

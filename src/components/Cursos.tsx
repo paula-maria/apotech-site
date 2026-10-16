@@ -17,10 +17,16 @@ export default function Cursos() {
           <p>{cursinho.lead}</p>
           <ul className="course-meta">
             <li>
-              <Clock aria-hidden="true" size={15} /> 35 horas
+              <Clock aria-hidden="true" size={15} /> <strong>35 horas por turma</strong>
             </li>
             <li>
-              <CalendarDays aria-hidden="true" size={15} /> Sábados · manhã ou tarde
+              <CalendarDays aria-hidden="true" size={15} /> <strong>7 encontros</strong>
+            </li>
+            <li>
+              <CalendarDays aria-hidden="true" size={15} /> <strong>31 de outubro a 19 de dezembro</strong>
+            </li>
+            <li>
+              <CalendarDays aria-hidden="true" size={15} /> <strong>Sábados · manhã ou tarde</strong>
             </li>
           </ul>
           <Link to="/cursos" className="course-link">
