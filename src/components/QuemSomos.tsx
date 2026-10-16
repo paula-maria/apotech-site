@@ -2,6 +2,8 @@ import { Trophy } from 'lucide-react'
 import { metodologia, sobre } from '../data/content'
 
 export default function QuemSomos() {
+  const [descricaoAntes, ...descricaoDepois] = sobre.descricao.split('Empresa Júnior')
+
   return (
     <section id="quem-somos" className="section about-section">
       <div className="container">
@@ -9,7 +11,13 @@ export default function QuemSomos() {
           <div className="about-copy">
             <h2 className="about-eyebrow">Quem somos</h2>
             <h3>Ciência farmacêutica a serviço da sociedade.</h3>
-            <p className="subtitle">{sobre.descricao}</p>
+            <p className="subtitle">
+              {descricaoAntes}Empresa Júnior (<abbr
+                className="ej-tooltip"
+                tabIndex={0}
+                title="Uma empresa júnior (ou EJ) é uma organização formada e gerida por estudantes universitários, com o objetivo de aplicar, na prática, os conhecimentos do curso por meio da prestação de serviços reais para a sociedade."
+              >EJ</abbr>){descricaoDepois.join('Empresa Júnior')}
+            </p>
             <p className="about-purpose">{sobre.proposito}</p>
           </div>
           <aside className="about-award">
