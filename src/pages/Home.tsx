@@ -41,10 +41,10 @@ export default function Home() {
   return (
     <div className="home-page" ref={homeRef}>
       <Hero />
+      <Cursos />
       <QuemSomos />
       <Identidade />
       <Areas />
-      <Cursos />
       <Servicos />
       <Equipe />
     </div>

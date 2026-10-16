@@ -3,7 +3,7 @@ import { sobre } from '../data/content'
 
 export default function Identidade() {
   return (
-    <Section id="identidade" titulo="Missão, visão e valores" alt>
+    <Section id="identidade" titulo="Missão, visão e valores">
       <div className="grid grid-3 identity-grid">
         <article className="card identity-card">
           <span className="identity-kicker">Nosso propósito</span>

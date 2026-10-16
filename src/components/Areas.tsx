@@ -10,6 +10,7 @@ export default function Areas() {
       id="areas"
       titulo="Áreas de atuação"
       subtitulo="Atendemos diferentes setores e públicos, conectando conhecimento farmacêutico a necessidades reais."
+      alt
     >
       <ul className="areas-grid">
         {areas.map((area, i) => {

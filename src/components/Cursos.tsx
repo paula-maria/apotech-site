@@ -5,7 +5,7 @@ import { INSCRICAO_URL, cursinho, informacoes, precos, secoes } from '../data/cu
 
 export default function Cursos() {
   return (
-    <Section id="cursos" titulo="Cursos e Treinamentos" subtitulo="Capacitações para quem quer se preparar e se qualificar na área farmacêutica." alt>
+    <Section id="cursos" titulo="Cursos e Treinamentos" subtitulo="Capacitações para quem quer se preparar e se qualificar na área farmacêutica.">
       <article className="course-card">
         <div className="course-main">
           <span className="course-badge">

@@ -5,7 +5,7 @@ export default function QuemSomos() {
   const [descricaoAntes, ...descricaoDepois] = sobre.descricao.split('Empresa Júnior')
 
   return (
-    <section id="quem-somos" className="section about-section">
+    <section id="quem-somos" className="section alt about-section">
       <div className="container">
         <div className="about-intro">
           <div className="about-copy">
