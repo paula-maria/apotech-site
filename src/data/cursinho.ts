@@ -40,7 +40,7 @@ export const secoes = {
     titulo: 'Valor da inscrição',
     descricao: 'Por inscrição, para as 35 horas do curso.',
     diaAvulso: {
-      pergunta: 'Quer pagar para participar apenas 1 dia?',
+      pergunta: 'Quer participar apenas 1 dia?',
       valor: 'R$ 50,00',
       texto: 'por dia de participação.',
     },

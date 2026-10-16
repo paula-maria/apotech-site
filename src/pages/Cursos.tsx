@@ -156,14 +156,6 @@ export default function Cursos() {
         </details>
       </Section>
 
-      <section id="inscricao" className="course-contact-strip">
-        <div className="container course-contact-inner">
-          <div className="course-contact-copy">
-            <h2>Seu próximo passo começa com uma conversa.</h2>
-            <p>Tem dúvidas sobre o curso? A equipe Apotech Jr. está aqui para ajudar.</p>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

@@ -7,6 +7,8 @@ export default function Footer() {
       <footer className="footer">
         <div className="container footer-inner">
           <div className="footer-contact">
+            <h2>Seu próximo passo começa com uma conversa.</h2>
+            <p className="footer-intro">Tem dúvidas sobre a nossa empresa? A equipe Apotech Jr. está aqui para ajudar.</p>
             <ul className="footer-links">
               {contato.telefones.map((telefone) => (
                 <li key={telefone.numero}>
