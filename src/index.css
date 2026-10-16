@@ -233,7 +233,7 @@ section[id] { scroll-margin-top: 70px; }
 .footer { background: var(--primary-dark); color: #fff; padding: 2.5rem 0 1.5rem; font-size: .9rem; }
 .footer-inner { display: grid; gap: 2rem; }
 .footer-contact h2 { margin-bottom: .5rem; color: #fff; font-size: 1.4rem; }
-.footer-intro { margin-bottom: 1rem; color: rgb(255 255 255 / 78%); }
+.footer-intro { margin-bottom: 1rem; color: var(--accent); }
 .footer-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .75rem 1.5rem; }
 .footer-links a { display: inline-flex; align-items: center; gap: .65rem; color: #fff; }
 .footer-links a:hover { color: var(--accent); }
