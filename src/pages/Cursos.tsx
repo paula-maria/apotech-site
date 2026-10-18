@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { CalendarDays, Clock, GraduationCap, Users } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { ArrowLeft, ArrowRight, BookOpenCheck, CalendarDays, Clock, GraduationCap, Users } from 'lucide-react'
 import Section from '../components/Section'
 import {
   INSCRICAO_URL,
@@ -29,6 +30,32 @@ function BotaoInscricao() {
 }
 
 export default function Cursos() {
+  const encontrosRef = useRef<HTMLDivElement>(null)
+  const [podeVoltar, setPodeVoltar] = useState(false)
+  const [podeAvancar, setPodeAvancar] = useState(true)
+
+  function atualizarSetas() {
+    const trilho = encontrosRef.current
+    if (!trilho) return
+
+    const card = trilho.querySelector<HTMLElement>('.course-carousel-slide')
+    const espacamento = Number.parseFloat(getComputedStyle(trilho).columnGap) || 0
+    const passo = (card?.offsetWidth ?? 0) + espacamento
+    setPodeVoltar(trilho.scrollLeft > passo / 2)
+    setPodeAvancar(trilho.scrollLeft + trilho.clientWidth < trilho.scrollWidth - 2)
+  }
+
+  function navegarEncontros(direcao: -1 | 1) {
+    const trilho = encontrosRef.current
+    if (!trilho) return
+
+    const card = trilho.querySelector<HTMLElement>('.course-card-item')
+    if (!card) return
+
+    const espacamento = Number.parseFloat(getComputedStyle(trilho).columnGap) || 0
+    trilho.scrollBy({ left: direcao * (card.offsetWidth + espacamento), behavior: 'smooth' })
+  }
+
   return (
     <>
       <section className="hero course-hero">
@@ -70,26 +97,39 @@ export default function Cursos() {
         titulo={secoes.conteudo.titulo}
         subtitulo={secoes.conteudo.subtitulo}
       >
-        <div className="grid grid-3 course-content-grid">
-          {encontros.map((e) => (
-            <article key={e.data} className="card course-card-item">
-              <span className="chip">
-                {e.data} · {e.ordem}
-              </span>
-              <h3 className="card-title">{e.titulo}</h3>
-              <ul className="check-list">
-                {e.topicos.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
+        <div className="course-carousel">
+          <div className="course-carousel-controls" aria-label="Controles do carrossel">
+            <button type="button" className="carousel-button" aria-label="Encontros anteriores" disabled={!podeVoltar} onClick={() => navegarEncontros(-1)}>
+              <ArrowLeft aria-hidden="true" size={20} />
+            </button>
+            <button type="button" className="carousel-button" aria-label="Próximos encontros" disabled={!podeAvancar} onClick={() => navegarEncontros(1)}>
+              <ArrowRight aria-hidden="true" size={20} />
+            </button>
+          </div>
+          <div className="course-carousel-track" ref={encontrosRef} onScroll={atualizarSetas} aria-label="Encontros do curso">
+            {encontros.map((e) => (
+              <article key={e.data} className="card course-card-item course-carousel-slide">
+                <span className="chip">
+                  {e.data} · {e.ordem}
+                </span>
+                <h3 className="card-title">{e.titulo}</h3>
+                <ul className="check-list">
+                  {e.topicos.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
           <article className="card card-highlight card-wide course-card-item">
-            <span className="chip">
-              {aulaoFinal.data} · {aulaoFinal.titulo}
-            </span>
-            <h3 className="card-title">{aulaoFinal.subtitulo}</h3>
-            <p>{aulaoFinal.texto}</p>
+            <BookOpenCheck className="final-class-icon" aria-hidden="true" size={30} />
+            <div className="final-class-content">
+              <span className="chip">
+                {aulaoFinal.data} · {aulaoFinal.titulo}
+              </span>
+              <h3 className="card-title">{aulaoFinal.subtitulo}</h3>
+              <p>{aulaoFinal.texto}</p>
+            </div>
           </article>
         </div>
       </Section>

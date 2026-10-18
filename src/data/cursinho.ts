@@ -111,20 +111,20 @@ export const turnos = [
     nome: 'Turma da manhã',
     horario: '08h–13h',
     slots: [
-      ['08h00–09h30', '1ª disciplina'],
-      ['09h30–11h00', '2ª disciplina'],
+      ['08h00–09h30', '1º assunto'],
+      ['09h30–11h00', '2º assunto'],
       ['11h00–11h30', 'Intervalo'],
-      ['11h30–13h00', '3ª disciplina'],
+      ['11h30–13h00', '3º assunto'],
     ],
   },
   {
     nome: 'Turma da tarde',
     horario: '14h–19h',
     slots: [
-      ['14h00–15h30', '1ª disciplina'],
-      ['15h30–17h00', '2ª disciplina'],
+      ['14h00–15h30', '1º assunto'],
+      ['15h30–17h00', '2º assunto'],
       ['17h00–17h30', 'Intervalo'],
-      ['17h30–19h00', '3ª disciplina'],
+      ['17h30–19h00', '3º assunto '],
     ],
   },
 ]
