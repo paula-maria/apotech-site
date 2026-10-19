@@ -5,7 +5,7 @@ import Identidade from '../components/Identidade'
 import Areas from '../components/Areas'
 import Servicos from '../components/Servicos'
 import Cursos from '../components/Cursos'
-import Equipe from '../components/Equipe'
+// import Equipe from '../components/Equipe'
 
 export default function Home() {
   const homeRef = useRef<HTMLDivElement>(null)
@@ -46,7 +46,7 @@ export default function Home() {
       <Identidade />
       <Areas />
       <Servicos />
-      <Equipe />
+      {/* <Equipe /> */}
     </div>
   )
 }

@@ -9,6 +9,7 @@ const links = [
   ['/#areas', 'Áreas de atuação'],
   ['/#servicos', 'Serviços'],
   ['/#equipe', 'Equipe'],
+  ['/cursos', 'Cursos'],
 ]
 
 export default function Header() {

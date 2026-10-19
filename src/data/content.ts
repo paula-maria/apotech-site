@@ -63,6 +63,9 @@ export const metodologia = [
   { titulo: 'Entrega', texto: 'Resultado e suporte contínuo.' },
 ]
 
+export const equipe: { nome: string; cargo: string }[] = []
+
+/*
 export const equipe = [
   { nome: 'Nicolas Andrade', cargo: 'Presidente' },
   { nome: 'Diraeli Freitas', cargo: 'Vice-presidente' },
@@ -77,3 +80,4 @@ export const equipe = [
   { nome: 'Tiago Souto', cargo: 'Assessor de projetos' },
   { nome: 'Julius Maximus', cargo: 'Assessor de projetos' },
 ]
+*/
