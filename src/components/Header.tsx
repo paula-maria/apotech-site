@@ -3,13 +3,10 @@ import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  ['/#cursos', 'Cursos'],
+  ['/cursos', 'Cursos'],
   ['/#quem-somos', 'Quem somos'],
-  ['/#identidade', 'Missão, visão e valores'],
   ['/#areas', 'Áreas de atuação'],
   ['/#servicos', 'Serviços'],
-  ['/#equipe', 'Equipe'],
-  ['/cursos', 'Cursos'],
 ]
 
 export default function Header() {

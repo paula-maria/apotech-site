@@ -14,7 +14,7 @@ export const cursinho = {
 }
 
 export const informacoes = [
-  { rotulo: 'Turmas', texto: 'manhã (08h–13h) ou tarde (14h–19h) — 5h de atividades por encontro, com intervalo de 30 minutos.' },
+  { rotulo: 'Turmas', itens: ['Manhã (08h–13h) ou tarde (14h–19h)', '5h de atividades por encontro com intervalo de 30 minutos'] },
   { rotulo: 'Investimento', texto: 'R$ 150 para estudantes · R$ 200 para profissionais, por inscrição.' },
   { rotulo: 'Vagas', texto: '70 por turma, 140 no total.' },
 ]

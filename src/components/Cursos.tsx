@@ -47,6 +47,12 @@ export default function Cursos() {
                       </div>
                     ))}
                   </div>
+                ) : 'itens' in i ? (
+                  <ul className="course-info-list">
+                    {i.itens.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
                 ) : (
                   <p>{i.texto}</p>
                 )}
